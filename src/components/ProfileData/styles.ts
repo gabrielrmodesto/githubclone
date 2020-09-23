@@ -1,4 +1,4 @@
-import styled, {css} from "styled-components";
+import styled, { css } from "styled-components";
 import {
 	RiGroupLine,
 	RiBuilding4Line,
@@ -40,6 +40,7 @@ export const Avatar = styled.img`
 
 	@media (min-width: 768px) {
 		width: 100%;
+		margin-top: -34px;
 	}
 `;
 export const Row = styled.ul`
@@ -50,7 +51,7 @@ export const Row = styled.ul`
 
 	> li {
 		display: flex;
-		align-items:center;
+		align-items: center;
 		> span {
 			font-size: 14px;
 			color: var(--gray);
@@ -68,24 +69,34 @@ const iconCSS = css`
 	flex-shrink: 0;
 `;
 
-export const PeopleIcon = styled(RiGroupLine)`${iconCSS}`;
+export const PeopleIcon = styled(RiGroupLine)`
+	${iconCSS}
+`;
 export const Column = styled.ul`
-	li{
+	li {
 		display: flex;
 		align-items: center;
 		font-size: 14px;
 	}
-	li + li{
+	li + li {
 		margin-top: 10px;
 	}
-	span{
+	span {
 		margin-left: 5px;
 		overflow: hidden;
 		text-overflow: ellipsis;
 		white-space: nowrap;
 	}
 `;
-export const CompanyIcon = styled(RiBuilding4Line)`${iconCSS}`;
-export const LocationIcon = styled(RiMapPin2Line)`${iconCSS}`;
-export const EmailIcon = styled(RiMailLine)`${iconCSS}`;
-export const BlogIcon = styled(RiLinksLine)`${iconCSS}`;
+export const CompanyIcon = styled(RiBuilding4Line)`
+	${iconCSS}
+`;
+export const LocationIcon = styled(RiMapPin2Line)`
+	${iconCSS}
+`;
+export const EmailIcon = styled(RiMailLine)`
+	${iconCSS}
+`;
+export const BlogIcon = styled(RiLinksLine)`
+	${iconCSS}
+`;
