@@ -22,7 +22,7 @@ interface Data {
 }
 
 const Profile: React.FC = () => {
-	const { username } = useParams();
+	const { username = 'gabrielrmodesto' } = useParams();
 	const [data, setData] = useState<Data>();
 
 	useEffect(() => {
